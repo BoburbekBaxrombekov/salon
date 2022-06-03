@@ -5,7 +5,6 @@ const mongoose = require("mongoose")
 const bodypar = require('body-parser')
 app.use(bodypar.json())
 app.use(bodypar.urlencoded({extended: false}))
-
 const cors = require("cors")
 app.use(cors())
 
