@@ -12,7 +12,7 @@ const cors = require("cors")
 app.use(cors())
 
 //---------------------------------------------- MongoDB ------------------------------------------------
-const MongoURI = "mongodb://localhost:27017/avtosalon"
+const MongoURI = "mongodb+srv://cluster0.6xn28.mongodb.net/myFirstDatabase"
 mongoose
     .connect(MongoURI, {
         useNewUrlParser: true
