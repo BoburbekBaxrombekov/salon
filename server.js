@@ -1,5 +1,6 @@
 const express = require('express')
 const app = express()
+const PORT = process.env.PORT || 3001
 const mongoose = require("mongoose")
 const bodypar = require('body-parser')
 app.use(bodypar.json())
@@ -29,4 +30,4 @@ app.use('/admin', require('./router/authRoutes'))
 
 
 
-app.listen(3001, console.log("run server 3001 port"))
+app.listen(PORT, console.log("run server 3001 port"))
